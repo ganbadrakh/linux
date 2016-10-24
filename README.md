@@ -21,6 +21,11 @@
     # Search in .sas files (if -R is not available)
     find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
 
+#### Ripgrep
+
+	Alternative, that is also available for windows.
+	[Ripgrep repo](https://github.com/BurntSushi/ripgrep)
+
 
 ### Create SSH Key
 
