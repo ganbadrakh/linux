@@ -23,8 +23,7 @@
 
 #### Ripgrep
 
-	Alternative, that is also available for windows.
-	[Ripgrep repo](https://github.com/BurntSushi/ripgrep)
+Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
 
 
 ### Create SSH Key
