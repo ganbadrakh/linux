@@ -25,6 +25,8 @@
 
 Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
 
+    # Search in .sas files
+    rg needle -g "*.sas"
 
 ### Create SSH Key
 
