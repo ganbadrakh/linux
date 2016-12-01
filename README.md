@@ -42,4 +42,58 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
     User git
     IdentityFile ~/.ssh/id_keyname
 
+<details>
+<summary>SourceTree Setup</summary>
 
+### Add SSH key in SourceTree
+
+1.  Add/modify key in SourceTree
+
+    Save in folder on hard drive
+    Rename it to .ppk
+    Import it via Tools -> Import...
+    Save it again, overwriting the old key
+
+1. Import it again in the SSH Agent
+    
+    Right click in the taskbar, Add key
+
+1. Open a regular console (cmd.exe)
+
+    "C:\Program Files (x86)\Atlassian\SourceTree\tools\putty\plink.exe" example.com
+    Then press 'y'
+    Then enter git (if asked for Login as:)
+
+1. In SourceTree add repo:
+    
+    git@example.com:my_repo.git
+
+1. Add user name and email
+    Go to "Terminal" in SourceTree and enter
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+
+</details>
+
+<details>
+<summary>Add new user on server</summary>
+
+### Add new user on server
+
+*Create user*  
+
+    useradd username
+    passwd username
+
+*Add this line to .bashrc*  
+
+    export LANG=en_US.utf8
+
+*Create directory in /share*  
+
+    mkdir /share/username
+    chmod 755 /share/username
+    chmod +t /share/username
+    chown username:username /share/username
+
+</details>
