@@ -1,4 +1,6 @@
 
+## Everyday tasks
+
 ### Grep
 
     grep
@@ -21,12 +23,7 @@
     # Search in .sas files (if -R is not available)
     find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
 
-#### Ripgrep
 
-Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
-
-    # Search in .sas files
-    rg needle -g "*.sas"
 
 ### Create SSH Key
 
@@ -41,6 +38,48 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_keyname
+
+
+## Remember these tools
+
+<details>
+<summary>Ripgrep</summary>
+
+Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
+
+    # Search in .sas files
+    rg needle -g "*.sas"
+
+</details>
+
+## Other tasks
+
+### Linux
+
+<details>
+<summary>Add new user on a linux server</summary>
+
+### Add new user on server
+
+*Create user*  
+
+    useradd username
+    passwd username
+
+*Add this line to .bashrc*  
+
+    export LANG=en_US.utf8
+
+*Create directory in /share*  
+
+    mkdir /share/username
+    chmod 755 /share/username
+    chmod +t /share/username
+    chown username:username /share/username
+
+</details>
+
+### Windows
 
 <details>
 <summary>SourceTree Setup</summary>
@@ -76,24 +115,16 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
 </details>
 
 <details>
-<summary>Add new user on server</summary>
+<summary>Cygwin</summary>
 
-### Add new user on server
+Packages to install:
 
-*Create user*  
++ nano
++ make
++ ssh
++ git
++ python3
++ chere ("console here" = context menu integration)
 
-    useradd username
-    passwd username
-
-*Add this line to .bashrc*  
-
-    export LANG=en_US.utf8
-
-*Create directory in /share*  
-
-    mkdir /share/username
-    chmod 755 /share/username
-    chmod +t /share/username
-    chown username:username /share/username
 
 </details>
