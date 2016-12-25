@@ -121,10 +121,10 @@ Packages to install:
 
 + nano
 + make
-+ ssh
++ openssh
 + git
 + python3
-+ chere ("console here" = context menu integration)
++ chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
 
 
 </details>
