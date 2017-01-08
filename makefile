@@ -17,6 +17,10 @@ download:
 
 main:
 	$(SAS) main.sas
+	
+latex:
+	latexmk -pdf -pdflatex='pdflatex -interaction=nonstopmode' -use-make table2.tex
+	latexmk -c
 
 table1:
 	$(SAS) table1.sas
