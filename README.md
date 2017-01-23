@@ -34,7 +34,9 @@ ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
 find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
 ```
 
-[More examples: find](http://www.binarytides.com/linux-find-command-examples/)
+More examples:  
+[find](http://www.binarytides.com/linux-find-command-examples/)  
+[grep](http://www.robelle.com/smugbook/regexpr.html), [grep](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
 
 
 ### Create SSH Key
