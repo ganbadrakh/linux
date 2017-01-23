@@ -2,38 +2,39 @@
 ## Everyday tasks
 
 ### Grep
+```bash
+grep
+    # search within files
+    # syntax: grep <options> <search-term> <filename>
+    #
+    # -i ignore case
+    # -n show line numbers
+    # -R recursive (sometimes not available!)
+    # -I ignore binary files
+    # -l print out file names instead
+    # -P Perl syntax \d \w \s
+    # -E extended syntax [[:digit:]] [[:alpha:]] [[:space:]]
+    # {2} exactly, {1,3} from to, {2,} two or more
+    # --include="*.txt" search only in .txt files
+find
+    # find files or directories based on name 
+    # syntax: find <location> <comparison-criteria> <search-term>
+    #
+    # -type f=search only files, d=search only directories
+    # -name name
 
-    grep
-        # search within files
-        # syntax: grep <options> <search-term> <filename>
-        #
-        # -i ignore case
-        # -n show line numbers
-        # -R recursive (sometimes not available!)
-        # -I ignore binary files
-        # -l print out file names instead
-        # -P Perl syntax \d \w \s
-        # -E extended syntax [[:digit:]] [[:alpha:]] [[:space:]]
-        # {2} exactly, {1,3} from to, {2,} two or more
-        # --include="*.txt" search only in .txt files
-    find
-        # find files or directories based on name 
-        # syntax: find <location> <comparison-criteria> <search-term>
-        #
-        # -type f=search only files, d=search only directories
-        # -name name
-    
 
-    # Search in all .php files recursively
-    grep -inRI "needle" --include="*.php"
+# Search in all .php files recursively
+grep -inRI "needle" --include="*.php"
 
-    # Seach in subdirectories beginning with abc (if -R is not available)
-    ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
+# Seach in subdirectories beginning with abc (if -R is not available)
+ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
 
-    # Search in .sas files (if -R is not available)
-    find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
+# Search in .sas files (if -R is not available)
+find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
+```
 
-[find](http://www.binarytides.com/linux-find-command-examples/)
+[More examples: find](http://www.binarytides.com/linux-find-command-examples/)
 
 
 ### Create SSH Key
