@@ -27,8 +27,11 @@ find
 # Search in all .php files recursively
 grep -inRI "needle" --include="*.php"
 
-# Seach in subdirectories beginning with abc (if -R is not available)
+# Search in immediate subdirectories for files starting with 'needle'
+ls */ | grep "needle*"
+# Seach in subdirectories starting with 'abc' for files starting with 'needle' (if grep -R is not available)
 ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
+
 
 # Search in .sas files (if -R is not available)
 find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
