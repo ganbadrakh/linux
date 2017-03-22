@@ -4,11 +4,11 @@
 
 |Command|Example|Comment|
 |---|---|---|
-|man <command>|man cdman ls|**Manual** Get help (close with q)|
-|<command> --help|cd --help|Also **help**|
-|<kbd>Tab</kbd> (1x or 2x) ||Auto completion|
-|<kbd>↑</kbd>| |See previous command|
-|<kbd>Ctrl</kbd>+<kbd>c</kbd>||Kill the current process or command (eg. if something hangs)|
+|man \<command>|man cd<br />man ls|**Manual** Get help (close with q)|
+|\<command> --help|cd --help|Also **help**|
+|<kbd>Tab</kbd> (1x or 2x) |&nbsp; |Auto completion|
+|<kbd>↑</kbd>|&nbsp;|See previous command|
+|<kbd>Ctrl</kbd>+<kbd>c</kbd>|&nbsp;|Kill the current process or command (eg. if something hangs)|
 
 
 ## Basic
