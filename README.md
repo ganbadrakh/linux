@@ -1,6 +1,16 @@
 
 ## Everyday tasks
 
+### Git
+```bash
+# Check, if the current commit already has a tag
+git tag -l --points-at HEAD
+# Create and push tags
+git tag -a v0.8 -m "got stuff done"
+git push --tags
+```
+
+
 ### Grep
 ```bash
 grep
