@@ -3,6 +3,10 @@
 
 ### Git
 ```bash
+# Add all files to change set, commit and push the change set
+git add -A
+git commit -m "got stuff done"
+git push
 # Check, if the current commit already has a tag
 git tag -l --points-at HEAD
 # Create and push tags
