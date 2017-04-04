@@ -7,6 +7,8 @@
 git add -A
 git commit -m "got stuff done"
 git push
+# Display tags, along with their message
+git tag -n9
 # Check, if the current commit already has a tag
 git tag -l --points-at HEAD
 # Create and push tags
