@@ -12,6 +12,10 @@ git tag -l --points-at HEAD
 # Create and push tags
 git tag -a v0.8 -m "got stuff done"
 git push --tags
+# Revert unstaged changes of a file
+git checkout path/to/file/to/revert
+# Revert all unstaged changes
+git checkout -- .
 ```
 
 
