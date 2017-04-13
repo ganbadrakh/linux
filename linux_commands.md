@@ -11,8 +11,8 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |<kbd>Tab</kbd> (1x or 2x) |&nbsp; |Auto completion|
 |<kbd>↑</kbd>|&nbsp;|See previous command|
 |<kbd>Ctrl</kbd>+<kbd>c</kbd>|&nbsp;|Kill the current process or command (eg. if something hangs)|
-| `history`|&nbsp;|Diplay all the past commands|
-|<kbd>Ctrl</kbd>+<kbd>r</kbd>|&nbsp;|Search through your history. Start typing and it will auto-complete. Hit <kbd>Ctrl</kbd>+<kbd>r</kbd> again and it will cycle though the other auto-complete options. Hit <kbd>Enter</kbd> and the command will execute. Hit <kbd>←</kbd>,<kbd>→</kbd> to edit commands.
+|`history`|&nbsp;|Diplay all the past commands|
+|<kbd>Ctrl</kbd>+<kbd>r</kbd>|&nbsp;|Search through your history. Start typing and it will auto-complete. Hit <kbd>Ctrl</kbd>+<kbd>r</kbd> again and it will cycle though the other auto-completion options. Hit <kbd>Enter</kbd> and the command will execute. Hit <kbd>←</kbd>,<kbd>→</kbd> to edit commands.
 
 
 ## Basic
