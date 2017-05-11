@@ -157,6 +157,7 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
 Packages to install:
 
 + nano
++ wget
 + make
 + openssh
 + git
