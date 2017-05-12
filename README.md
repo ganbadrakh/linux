@@ -119,6 +119,18 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
 ### Windows
 
 <details>
+<summary>Multiple python versions</summary>
+
+    $ python --version
+    Python 3.5.2
+    $ pip install lxml # installs a package for python 3
+    $ py --version
+    Python 2.7.13
+    $ py -m pip install lxml # installs a package for python 2
+   
+</details>
+
+<details>
 <summary>SourceTree Setup</summary>
 
 ### Add SSH key in SourceTree
@@ -161,7 +173,6 @@ Packages to install:
 + make
 + openssh
 + git
-+ python3
 + chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
 
 
