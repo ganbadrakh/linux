@@ -37,7 +37,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |ssh `<server>` | `ssh username@example.com` | **secure shell** <br> Connect to a server |
 |exit | | Quit server connection|
 |scp `<source>` `<target>` | `scp username@example.com:/my/folder/*.txt .` | **secure copy**  <br> files from/to a server <br> -r recursive (include subfolders)<br> The example copies all files from the given directory then end in .txt to the local directory (dot) |
-|nano `<filename>` | nano text.txt | **file editor** <br> <kbd>Ctrl</kbd>+<kbd>x</kbd> to close |
+|nano `<filename>` | nano text.txt | **file editor** <br> <kbd>Ctrl</kbd>+<kbd>x</kbd> to close <br> <kbd>Alt</kbd>+<kbd>/</kbd> to go to the end of a file |
 |touch `<filename>` | touch text.txt <br> touch makefile | Create a new, empty file. Especially helpful to create makefiles under windows. Actually the command is used for changing file timestamps |
 |stat `<filename>` | stat text.txt | Display file status, creation date, last modification date, etc. |
 ## SAS specific
