@@ -170,3 +170,9 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
     rg needle -g "*.sas"
 
 </details>
+
+<details>
+<summary>Tool: slap</summary>
+slap is a Sublime-like terminal-based text editor
+[slap](https://github.com/slap-editor/slap)
+</details>
