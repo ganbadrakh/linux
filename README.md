@@ -58,9 +58,19 @@ find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
 ```
 
 More examples:  
-[find](http://www.binarytides.com/linux-find-command-examples/)  
-[grep](http://www.robelle.com/smugbook/regexpr.html), [grep](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
+find | [ex1](http://www.binarytides.com/linux-find-command-examples/)  
+grep | [ex1](http://www.robelle.com/smugbook/regexpr.html), [ex2](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
 
+### Python
+
+Multiple python versions
+```bash
+$ python --version
+Python 3.6.0
+$ py -3.5 --version
+Python 3.5.2
+$ py -3.5 -m pip install sqlalchemy # installs a package for python 3.5
+```
 
 ### Create SSH Key
 ```bash
@@ -77,21 +87,22 @@ User git
 IdentityFile ~/.ssh/id_keyname
 ```
 
-## Remember these tools
+## Misc
 
 <details>
-<summary>Ripgrep</summary>
+<summary>Cygwin packages to install</summary>
 
-Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
+Packages to install:
 
-    # Search in .sas files
-    rg needle -g "*.sas"
++ nano
++ wget
++ make
++ openssh
++ git
++ chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
++ bash-completion (adds autocompletion for makefiles)
 
 </details>
-
-## Other tasks
-
-### Linux
 
 <details>
 <summary>Add new user on a linux server</summary>
@@ -116,22 +127,8 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
 
 </details>
 
-### Windows
-
 <details>
-<summary>Multiple python versions</summary>
-
-    $ python --version
-    Python 3.5.2
-    $ pip install lxml # installs a package for python 3
-    $ py --version
-    Python 2.7.13
-    $ py -m pip install lxml # installs a package for python 2
-   
-</details>
-
-<details>
-<summary>SourceTree Setup</summary>
+<summary>SourceTree Setup under Windows</summary>
 
 ### Add SSH key in SourceTree
 
@@ -164,16 +161,11 @@ Alternative, that is also available for windows: [Ripgrep](https://github.com/Bu
 </details>
 
 <details>
-<summary>Cygwin</summary>
+<summary>Tool: Ripgrep</summary>
 
-Packages to install:
+Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
 
-+ nano
-+ wget
-+ make
-+ openssh
-+ git
-+ chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
-+ bash-completion (adds autocompletion for makefiles)
+    # Search in .sas files
+    rg needle -g "*.sas"
 
 </details>
