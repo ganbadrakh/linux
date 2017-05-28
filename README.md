@@ -99,6 +99,7 @@ Packages to install:
 + make
 + openssh
 + git
++ curl
 + chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
 + bash-completion (adds autocompletion for makefiles)
 
