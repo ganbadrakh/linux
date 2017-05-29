@@ -161,18 +161,8 @@ Packages to install:
 
 </details>
 
-<details>
-<summary>Tool: Ripgrep</summary>
+## Tools
 
-Alternative, that is also available for windows: [Ripgrep](https://github.com/BurntSushi/ripgrep).
-
-    # Search in .sas files
-    rg needle -g "*.sas"
-
-</details>
-
-<details>
-<summary>Tool: slap</summary>
-slap is a Sublime-like terminal-based text editor
-[slap](https://github.com/slap-editor/slap)
-</details>
++ [Ripgrep](https://github.com/BurntSushi/ripgrep) - Search tool, alternative to grep
++ [slap](https://github.com/slap-editor/slap) - Sublime-like terminal-based text editor
++ [OmniDB](https://github.com/OmniDB/OmniDB) - Convert databases
