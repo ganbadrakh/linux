@@ -45,7 +45,7 @@ find
 
 
 # Search in all .php files recursively
-grep -inRI "needle" --include="*.php"
+grep -i 'needle' --include="*.sas.dd" *
 
 # Search in immediate subdirectories for files starting with 'needle'
 ls */ | grep "needle*"
