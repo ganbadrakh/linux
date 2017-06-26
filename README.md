@@ -44,12 +44,12 @@ find
     # -name name
 
 
-# Search in all .php files recursively
+# Search in all .sas.dd files
 grep -i 'needle' --include="*.sas.dd" *
 
 # Search in immediate subdirectories for files starting with 'needle'
 ls */ | grep "needle*"
-# Seach in subdirectories starting with 'abc' for files starting with 'needle' (if grep -R is not available)
+# Search in all subdirectories starting with 'abc' for .txt-files starting with 'needle' (if grep -R is not available)
 ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
 
 
