@@ -38,10 +38,11 @@ grep
     # --include="*.txt" search only in .txt files
 find
     # find files or directories based on name 
-    # syntax: find <location> <comparison-criteria> <search-term>
+    # syntax: find <location> <options>
     #
     # -type f=search only files, d=search only directories
     # -name name
+    # -iname caseinsensitive name
 
 
 ## Search in files
@@ -58,7 +59,7 @@ find . -type d -name 'needle'
 ```
 
 More examples:  
-find | [ex1](http://www.binarytides.com/linux-find-command-examples/), [ex2](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files)
+find | [ex1](http://www.binarytides.com/linux-find-command-examples/), [ex2](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files)  
 grep | [ex1](http://www.robelle.com/smugbook/regexpr.html), [ex2](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
 
 ### Python
