@@ -54,7 +54,7 @@ ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
 
 
 # Search in .sas files (if -R is not available)
-find . -type f -name "*.sas" | xargs grep -li 'needle' > ~/grepoutput.txt
+find . -type f -name "*.sas" -exec grep -li 'needle' {} +
 ```
 
 More examples:  
