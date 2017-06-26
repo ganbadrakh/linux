@@ -44,21 +44,21 @@ find
     # -name name
 
 
-# Search in all .sas.dd files
-grep -i 'needle' --include="*.sas.dd" *
+## Search in files
+# Search in files of current directory, ignore case, print filenames only
+grep -li 'needle' *
 
-# Search in immediate subdirectories for files starting with 'needle'
-ls */ | grep "needle*"
-# Search in all subdirectories starting with 'abc' for .txt-files starting with 'needle' (if grep -R is not available)
-ls -R abc* | grep "needle" --include="*.txt" > ~/grepoutput.txt
-
-
-# Search in .sas files (if -R is not available)
+# Search in files of all subdirectories, hide error messages
 find . -type f -name "*.sas" -exec grep -li 'needle' {} +
+
+
+## Search in filenames
+# Search in filenames in all subdirectories
+find . -type d -name 'needle'
 ```
 
 More examples:  
-find | [ex1](http://www.binarytides.com/linux-find-command-examples/)  
+find | [ex1](http://www.binarytides.com/linux-find-command-examples/), [ex2](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files)
 grep | [ex1](http://www.robelle.com/smugbook/regexpr.html), [ex2](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
 
 ### Python
