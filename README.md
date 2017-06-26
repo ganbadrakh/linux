@@ -42,7 +42,7 @@ find
     #
     # -type f=search only files, d=search only directories
     # -name name
-    # -iname caseinsensitive name
+    # -iname caseinsensitive name (does not work on older systems)
 
 
 ## Search in files
@@ -54,8 +54,11 @@ find . -type f -name "*.sas" -exec grep -li 'needle' {} +
 
 
 ## Search in filenames
-# Search in filenames in all subdirectories
-find . -type d -name 'needle'
+# Search in file names and directory names in all subdirectories
+find . -name 'needle'
+
+# Search in file names only
+find . -type f -name 'needle'
 ```
 
 More examples:  
