@@ -5,7 +5,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 ## Help
 
 |Command|Example|Comment|
-|---|---|---|
+|--------|---|---|
 |man `<command>`|man cd<br />man ls|**Manual** Get help (close with q)|
 |`<command>` --help|cd --help|Also **help**|
 |<kbd>Tab</kbd> (1x or 2x) |&nbsp; |Auto completion|
