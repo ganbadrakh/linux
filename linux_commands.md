@@ -25,7 +25,8 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |clear| | **Clear** the console <br>gives you a fresh view|
 |mkdir `<foldername>` |mkdir test | **Make directory** <br> creates a new folder with the given name|
 |chmod <permissions> <foldername>|chmod 777 test|**Change permissions** <br> for file <br> 777 gives the folder all possible rights |
-|cp `<source>` `<target>` <br> mv  `<source>` `<target>` | cp text.txt test <br> mv text.txt test <br> mv test.txt bla.txt|**Copy, Move** a file <br> mv can also be used to<br> rename a file (last example)|
+|mv  `<source>` `<target>` | mv text.txt test <br> mv test.txt bla.txt |**Move** a file <br> Can also be used to<br> rename a file (second example)|
+|cp `<source>` `<target>`| cp text.txt test <br> cp -p text.txt test <br> **Copy** a file <br> -p preserves mode, ownership, and timestamps<br>|
 |rm `<filename>` <br> rm -rf `<foldername>`|rm text.txt <br> rm -rf test  <br> rm \*.tmp (removes all files with file ending \*.tmp)| **Remove** <br> *warning: cannot be undone!* <br> -f force, no confirmation<br> dialog, no warnings <br> -r recursive, for folders |
 
 ## Advanced
