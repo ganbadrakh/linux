@@ -61,6 +61,8 @@ find . -name 'needle'
 find . -type f -name 'needle'
 ```
 
+[More on Regex](https://github.com/zeeshanu/learn-regex)
+
 More examples:  
 find | [ex1](http://www.binarytides.com/linux-find-command-examples/), [ex2](https://en.wikibooks.org/wiki/Guide_to_Unix/Commands/Finding_Files)  
 grep | [ex1](http://www.robelle.com/smugbook/regexpr.html), [ex2](http://marvin.cs.uidaho.edu/Teaching/CS445/regex.html)
