@@ -95,6 +95,8 @@ IdentityFile ~/.ssh/id_keyname
 
 ## Misc
 
+File naming conventions | [link](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)  
+
 <details>
 <summary>Cygwin packages to install</summary>
 
