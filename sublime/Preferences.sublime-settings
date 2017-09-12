@@ -1,0 +1,16 @@
+{
+	"auto_match_enabled": false,
+	"color_scheme": "Packages/Color Scheme - Default/LAZY.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		97
+	],
+	"spell_check": false
+}
