@@ -44,6 +44,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 ## Lesser used
 |Command|Example|Comment|
 |---|---|---|
+|su `<filename>`| su root | **switch user** |
 |touch `<filename>` | touch text.txt <br> touch makefile | Create a new, empty file. Especially helpful to create makefiles under windows. Actually the command is used for changing file timestamps |
 |stat `<filename>` | stat text.txt | Display file status, creation date, last modification date, etc. |
 |du `<directory>` | du -s . <br> du -sh . | **disk usage** <br> -s summary <br> -h human readable |
