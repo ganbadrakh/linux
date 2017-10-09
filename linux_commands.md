@@ -56,23 +56,26 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |qdel `<job number>` <br> qdel -u `<username>` | qdel 4711 <br> qdel -u user | Kill SAS job <br> Kill all jobs of a certain user |
 |qstat| |View your running programs |
 
-## Important permissions
+## Permissions
 
 Type `chmod xxx <filename>` to change permissions where `xxx` is the numerical code from the table below.
 
 ```
 Explaination of the Codes: . ... ... ...
+                           (type) (user persmissions) (group permissions) (world permissions)
 ```
 The first item can be `d` (a directory), `-` (a regular file) or `l` (a symbolic link).  
 The following three triplets specify permissons for the `user`, `group` and `world` in that order.  
 In each tripplet, permissions can be `r` (read), `w` (write), `x` (execute) or `-` (not assigned).  
 Setting permissions can be done via numbers: `r=4`, `w=2`, `x=1` and `-=0`.  
 
-|Setting|Code|User Case|
+|Setting|Code|Use Case|
 |---|---|---|
+|`----------`|000|Locking even yourself out. Use `chmod` again, if this happens. |
 |`-r--------`|400|An auto-generated password file (e.g. `~/.google_authenticator`). |
 |`-rw-------`|600|`~/.history`, all the ssh keys in your `~/.ssh` folder.|
 |`-rwx------`|700|Your `~/.ssh` folder.|
+|`-rw-r--r--`|644|A textfile, that others should see as well.|
 |`-rwxr-xr-x`|755|Files and folders you want other people to *see*. |
 |`-rwxrwxrwx`|777|Files and folders you want other people to *see and modify*. The most open permission.|
 
