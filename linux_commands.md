@@ -44,8 +44,8 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 ## Lesser used
 |Command|Example|Comment|
 |---|---|---|
-|su `<filename>`| su root | **switch user** |
-|touch `<filename>` | touch text.txt <br> touch makefile | Create a new, empty file. Especially helpful to create makefiles under windows. Actually the command is used for changing file timestamps |
+|su `<username>`| su root | **switch user** |
+|touch `<filename>` | touch text.txt <br> touch makefile | **touch** a file. Creates a new, empty file if the file does not already exist. Especially helpful to create makefiles under Windows. Actually the command is used for changing file timestamps. |
 |stat `<filename>` | stat text.txt | Display file status, creation date, last modification date, etc. |
 |du `<directory>` | du -s . <br> du -sh . | **disk usage** <br> -s summary <br> -h human readable |
 
@@ -55,3 +55,15 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |qbs `<sasfile>` | qbs test.sas <br> qbs -q s -o disksize=30G test.sas | Submit a SAS file to the server <br> -q s short queue  <br> -q m medium queue  <br> -q l long queue  <br> -o ... other options.  <br> Will print a job number.|
 |qdel `<job number>` <br> qdel -u `<username>` | qdel 4711 <br> qdel -u user | Kill SAS job <br> Kill all jobs of a certain user |
 |qstat| |View your running programs |
+
+## Important permissions
+
+Type `chmod xxx <filename>` to change permissions where `xxx` is the numerical code from the table below.
+
+|Setting|Code|User Case|
+|---|---|---|
+|`-rw-------`|600|All the ssh keys in your `~/.ssh` folder|
+
+
+
+
