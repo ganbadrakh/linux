@@ -60,9 +60,21 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 
 Type `chmod xxx <filename>` to change permissions where `xxx` is the numerical code from the table below.
 
+```
+Explaination of the Codes: . ... ... ...
+```
+The first item can be `d` (a directory), `-` (a regular file) or `l` (a symbolic link).  
+The following three triplets specify permissons for the `user`, `group` and `world` in that order.  
+In each tripplet, permissions can be `r` (read), `w` (write), `x` (execute) or `-` (not assigned).  
+Setting permissions can be done via numbers: `r=4`, `w=2`, `x=1` and `-=0`.  
+
 |Setting|Code|User Case|
 |---|---|---|
-|`-rw-------`|600|All the ssh keys in your `~/.ssh` folder|
+|`-r--------`|400|An auto-generated password file (e.g. `~/.google_authenticator`). |
+|`-rw-------`|600|`~/.history`, all the ssh keys in your `~/.ssh` folder.|
+|`-rwx------`|700|Your `~/.ssh` folder.|
+|`-rwxr-xr-x`|755|Files and folders you want other people to *see*. |
+|`-rwxrwxrwx`|777|Files and folders you want other people to *see and modify*. The most open permission.|
 
 
 
