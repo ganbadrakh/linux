@@ -85,3 +85,4 @@ The read bit allows to list the files within the directory.
 The write bit allows to create, rename, or delete files within the directory, and modify the directory's attributes.  
 The execute bit allows to enter the directory, and access files and directories inside.  
 
+To view permissions as numerical code: `stat -c %a <filename>`.
