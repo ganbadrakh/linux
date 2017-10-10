@@ -75,7 +75,7 @@ Setting permissions can be done via numbers: `r=4`, `w=2`, `x=1` and `-=0`.
 |`-r--------`|400|An auto-generated password file (e.g. `~/.google_authenticator`). |
 |`-rw-------`|600|`~/.history`, all the ssh keys in your `~/.ssh` folder.|
 |`-rwx------`|700|Your `~/.ssh` folder.|
-|`-rw-r--r--`|644|A textfile, that others should see as well.|
+|`-r--r--r--`|444|A textfile, that others should see as well but nobody should modify it.|
 |`-rwxr-xr-x`|755|Files and folders you want other people to *see*. |
 |`-rwxrwxrwx`|777|Files and folders you want other people to *see and modify*. The most open permission.|
 
