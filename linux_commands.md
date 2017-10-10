@@ -75,10 +75,13 @@ Setting permissions can be done via numbers: `r=4`, `w=2`, `x=1` and `-=0`.
 |`-r--------`|400|An auto-generated password file (e.g. `~/.google_authenticator`). |
 |`-rw-------`|600|`~/.history`, all the ssh keys in your `~/.ssh` folder.|
 |`-rwx------`|700|Your `~/.ssh` folder.|
-|`-r--r--r--`|444|A textfile, that others should see as well but nobody should modify it.|
+|`-r--r--r--`|444|A textfile, that others should see as well, but nobody should modify it.|
+|`-r-xr-xr-x`|555|A folder, that others should be able to `cd` into as well, but nobody should modify it.|
 |`-rwxr-xr-x`|755|Files and folders you want other people to *see*. |
 |`-rwxrwxrwx`|777|Files and folders you want other people to *see and modify*. The most open permission.|
 
-
-
+Permissions on directory have the following meaning:  
+The read bit allows to list the files within the directory.  
+The write bit allows to create, rename, or delete files within the directory, and modify the directory's attributes.  
+The execute bit allows to enter the directory, and access files and directories inside.  
 
