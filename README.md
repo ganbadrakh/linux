@@ -18,6 +18,9 @@ git push --tags
 git checkout path/to/file/to/revert
 # Revert all unstaged changes (period at the end is important)
 git checkout -- .
+
+# Show changes with previous version
+git diff HEAD^^ myfile.txt > changes.txt
 ```
 
 
