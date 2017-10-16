@@ -6,7 +6,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 
 |Command|Example|Comment|
 |--------|---|---|
-|man `<command>`|man cd<br />man ls|**Manual** <br> Get help (close with q)|
+|man `<command>`|man cd<br />man ls|**Manual** <br> Get help (close with <kbd>q</kbd>)|
 |`<command>` --help|cd --help|Also **help**|
 |<kbd>Tab</kbd> (1x or 2x) |&nbsp; |Auto completion|
 |<kbd>↑</kbd>|&nbsp;|See previous command|
