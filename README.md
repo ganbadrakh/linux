@@ -84,7 +84,7 @@ $ py -3.5 -m pip install sqlalchemy # installs a package for python 3.5
 ### Create SSH Key
 ```bash
 # Creating
-ssh-keygen -t rsa -b 4096 -N "" -C "bla@bla.com" -f id_keyname
+ssh-keygen -t rsa -b 4096 -N "" -C "" -f keyname
 
 # Setting access rights
 chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
