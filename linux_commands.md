@@ -93,8 +93,7 @@ The execute bit allows to enter the directory, and access files and directories 
 
 To view permissions as numerical code: `stat -c %a <filename>`.
 
-<description>
-<summary>What does `s` mean? (Click to expand)</summary>
+<details><summary>What does `s` mean? (click to expand)</summary>
 "s", like "x", means something different for directories and regular files. 
 
 For files, "x" means "executable" of course. For directories, it means "searchable." Without "x" permission on a directory, you can't set it to be your current directory, or get any of the file information like size, permissions, or inode number, so that you effectively can't access any of the files. If a directory has no "r" permission, you can't get a listing, but if you know a file is there, you can still access the file.
@@ -102,4 +101,4 @@ For files, "x" means "executable" of course. For directories, it means "searchab
 Now "s", for files, means "setuid exec." If a file has s permission, then it's executable, and furthermore, the user id and/or group id of the process is set to the user or group id of the owner of the file, depending on whether it's the user or group "s" that's set. This is a way to give limited root powers to a user -- a program that runs as root when an ordinary user executes it. For example, the "passwd" program, which can change otherwise write-protected files on behalf of a user, works this way: it's owned by the "bin" group (generally) and has g+s so that it can write to /etc/passwd and/or /etc/opasswd which are also owned by group "bin."
 
 For directories, "s" means "sticky". If a directory has "s", then the owner and/or group of any files put into the directory are set to the owner/group of the directory. This is often used on CVS repositories, so that the files in the repository end up all owned by the same person and/or group, even though they're put in by different people. I use g+s on all the CVS repositories I set up.
-</description>
+</details>
