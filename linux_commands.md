@@ -45,7 +45,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 ## Lesser used
 |Command|Example|Comment|
 |---|---|---|
-|touch `<filename>` | touch text.txt <br> touch makefile | **touch** a file. Creates a new, empty file if the file does not already exist. Especially helpful to create makefiles under Windows. Actually the command is used for changing file timestamps. |
+|touch `<filename>` | touch text.txt <br> touch makefile | **touch** a file.<br>Creates a new, empty file if the file <br>does not already exist.<br> Especially helpful to create <br>makefiles under Windows. Actually the command<br> is used for changing file timestamps. |
 |stat `<filename>` | stat text.txt | Display file status, creation date, last modification date, etc. |
 |du `<directory>` | du -s . <br> du -sh . | **disk usage** <br> -s summary <br> -h human readable |
 |su `<username>`| su root | **switch user** |
