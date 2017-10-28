@@ -47,7 +47,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |---|---|---|
 |touch `<filename>` | touch text.txt <br> touch makefile | **touch** a file.<br>Creates a new, empty file if the file does <br>not already exist.<br> Especially helpful to create makefiles under Windows.<br>Actually the command is used for changing file timestamps. |
 |stat `<filename>` | stat text.txt | Display file **status**, creation date, <br>last modification date, etc. |
-|du `<directory>` | du -s . <br> du -sh . | **disk usage** <br> -s summary <br> -h human readable |
+|du `<directory>` | du -s . <br> du -sh . <br> du -sh * | sort -h | **disk usage** <br> -s summary <br> -h human readable |
 |chown `<username>` `<file>` | sudo chown alice folder | **change file owner** |
 |su `<username>`| su root | **switch user** |
 |passwd `<username>` | passwd alice | **change password** | 
