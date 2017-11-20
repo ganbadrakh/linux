@@ -81,6 +81,13 @@ Python 3.5.2
 $ py -3.5 -m pip install sqlalchemy # installs a package for python 3.5
 ```
 
+Telling cygin the Python installation directory
+```bash
+echo "PATH=\$PATH:/cygdrive/c/Users/frohrer/AppData/Local/Continuum/anaconda3" >> ~/.bash_profile
+source ~/.bash_profile
+which python
+```
+
 ### Create SSH Key
 ```bash
 # Creating
