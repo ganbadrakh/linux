@@ -184,3 +184,12 @@ Packages to install:
 + [Ripgrep](https://github.com/BurntSushi/ripgrep) - Search tool, alternative to grep
 + [slap](https://github.com/slap-editor/slap) - Sublime-like terminal-based text editor
 + [OmniDB](https://github.com/OmniDB/OmniDB) - Convert databases
+
+
+## Installing Docker under Ubuntu
+
++ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#upgrade-docker-after-using-the-convenience-script
++ https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
+
+
+
