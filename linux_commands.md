@@ -39,6 +39,7 @@ Try also this website: [http://explainshell.com/](http://explainshell.com/)
 |ssh `<server>` <br> ssh -t `<server>` "`<command>`" | ssh `username@example.com` <br> ssh -t `username@example.com` "ls -a" | **secure shell** <br> Connect to a server <br> -t Close connection immediately after the command is done |
 |exit | | Quit server connection |
 |scp `<source>` `<target>` | `scp username@example.com:/my/folder/*.txt .` | **secure copy**  <br> files from/to a server <br> -r recursive (include subfolders)<br> The example copies all files from the given directory then end in .txt to the local directory (dot) |
+|rsync `<source>` `<target>` | rsync --progress file.txt servername:/home/user/data | **rsync** <br> copy files from/to a server |
 |nano `<filename>` | nano text.txt | **file editor** <br> <kbd>Ctrl</kbd>+<kbd>x</kbd> to close <br> <kbd>Alt</kbd>+<kbd>/</kbd> to go to the end of a file |
 
 
