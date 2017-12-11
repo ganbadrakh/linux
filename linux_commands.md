@@ -109,7 +109,7 @@ For directories, "s" means "sticky". If a directory has "s", then the owner and/
 
 |Command|Comment|
 |---|---|
-|screen -ls  | | List all sessions. |
+|screen -ls | List all sessions. |
 |screen -S `<name>`| Create new screen session. |
 |<kbd>Ctrl</kbd>+<kbd>A</kbd>,<kbd>D</kbd> | Detach from current session. |
 |screen -r `<name>`| Attach to session. |
