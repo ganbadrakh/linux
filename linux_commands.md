@@ -104,3 +104,12 @@ Now "s", for files, means "setuid exec." If a file has s permission, then it's e
 
 For directories, "s" means "sticky". If a directory has "s", then the owner and/or group of any files put into the directory are set to the owner/group of the directory. This is often used on CVS repositories, so that the files in the repository end up all owned by the same person and/or group, even though they're put in by different people. I use g+s on all the CVS repositories I set up.
 </details>
+
+## Screen
+
+|Command|Example|Comment|
+|---|---|---|
+|screen -S `<name>`| screen -S computation | Create new screen session. |
+
+
+
