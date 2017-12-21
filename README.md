@@ -111,15 +111,14 @@ File naming conventions | [link](http://www2.stat.duke.edu/~rcs46/lectures_2015/
 <summary>Cygwin packages to install</summary>
 
 Packages to install:
-
-+ nano
-+ wget
-+ make
-+ openssh
-+ git
-+ curl
-+ chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
-+ bash-completion (adds autocompletion for makefiles)
++ Devel/git
++ Devel/make
++ Editors/nano
++ Net/openssh
++ Net/curl
++ Shells/bash-completion (adds autocompletion for makefiles)
++ Utils/chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
++ Web/wget
 
 </details>
 
