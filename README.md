@@ -104,6 +104,7 @@ IdentityFile ~/.ssh/id_keyname
 <summary>Cygwin Installation </summary>
 
 Packages to install:
++ Archive/unzip
 + Archive/zip
 + Devel/git
 + Devel/make
