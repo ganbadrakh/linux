@@ -72,20 +72,15 @@ grep | [ex1](http://www.robelle.com/smugbook/regexpr.html), [ex2](http://marvin.
 
 ### Python
 
-Multiple Python versions
+Working with Python 2.7
 ```bash
 $ python --version
-Python 3.6.0
-$ py -3.5 --version
-Python 3.5.2
-$ py -3.5 -m pip install sqlalchemy # installs a package for python 3.5
-```
+Python 3.6.3 :: Anaconda custom (64-bit)
 
-Telling cygwin the Python installation directory
-```bash
-echo "PATH=\$PATH:/cygdrive/c/Users/frohrer/AppData/Local/Continuum/anaconda3" >> ~/.bash_profile
-source ~/.bash_profile
-which python
+$ conda create -n py27 python=2.7
+$ activate py27
+$ pip install csvsort
+$ deactivate
 ```
 
 ### Create SSH Key
@@ -105,12 +100,11 @@ IdentityFile ~/.ssh/id_keyname
 
 ## Misc
 
-File naming conventions | [link](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)  
-
 <details>
-<summary>Cygwin packages to install</summary>
+<summary>Cygwin Installation </summary>
 
 Packages to install:
++ Archive/zip
 + Devel/git
 + Devel/make
 + Editors/nano
@@ -120,6 +114,12 @@ Packages to install:
 + Utils/chere ("console here" = context menu integration. after installation, run cygwin as admin and type 'chere -i -t mintty')
 + Web/wget
 
+Telling cygwin the Python installation directory
+```bash
+echo "PATH=\$PATH:/cygdrive/c/Users/frohrer/AppData/Local/Continuum/anaconda3" >> ~/.bash_profile
+source ~/.bash_profile
+which python
+```
 </details>
 
 <details>
