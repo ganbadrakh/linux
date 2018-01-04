@@ -1,5 +1,34 @@
 
-## Everyday tasks
+### Create SSH Key
+```bash
+# Creating
+ssh-keygen -t rsa -b 4096 -N "" -C "" -f keyname
+
+# Setting access rights
+chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
+
+# ~/.ssh/config
+Host github
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_keyname
+```
+
+### Azure
+```bash
+azcopy \
+    --source https://<foo>.blob.core.windows.net/<bar>/<myfile.zip> \
+    --destination /path/to/my/directory/<myfile.zip> \
+    --source-key <the_key==>
+
+azcopy \
+    --sourcehttps://<foo>.blob.core.windows.net/<bar>/ \
+    --destination /path/to/my/directory \
+    --source-key <the_key==> \
+    --include "prefix" \
+    --recursive
+```
+[Installation instructions and more info](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-linux)
 
 ### Git
 ```bash
@@ -82,22 +111,6 @@ $ activate py27
 $ pip install csvsort
 $ deactivate
 ```
-
-### Create SSH Key
-```bash
-# Creating
-ssh-keygen -t rsa -b 4096 -N "" -C "" -f keyname
-
-# Setting access rights
-chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
-
-# ~/.ssh/config
-Host github
-HostName github.com
-User git
-IdentityFile ~/.ssh/id_keyname
-```
-
 ## Misc
 
 <details>
