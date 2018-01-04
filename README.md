@@ -22,7 +22,7 @@ azcopy \
     --source-key <the_key==>
 
 azcopy \
-    --sourcehttps://<foo>.blob.core.windows.net/<bar>/ \
+    --source https://<foo>.blob.core.windows.net/<bar>/ \
     --destination /path/to/my/directory \
     --source-key <the_key==> \
     --include "prefix" \
