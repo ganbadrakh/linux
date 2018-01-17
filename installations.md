@@ -39,7 +39,7 @@ Installing Python 2.7 and packages
 
 1. Install Anaconda/Miniconda
 2. In Cygwin: Make sure that Anaconda/Miniconda is NOT in path
-3. In Cygwin  
+3. In Cygwin | [source](http://wiki.fast.ai/index.php/Awscli_in_cygwin)  
     `wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg`  
     `install apt-cyg /bin`  
     `apt-cyg install python`  
