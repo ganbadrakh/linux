@@ -11,7 +11,7 @@ sudo apt install -y mysql-server
 mysql_secure_installation
 ```
 
-## Installing Python Anaconda under Ubuntu
+## Installing Python Anaconda under Windows / Ubuntu
 
 1. Go to [https://www.anaconda.com/download/](https://www.anaconda.com/download/) and remember the current version number.
 2. `curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh`
