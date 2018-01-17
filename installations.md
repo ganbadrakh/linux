@@ -31,3 +31,27 @@ Installing Python 2.7 and packages
 2. `activate py27` or `source activate py27`
 3. `pip install csvsort`
 4. `deactivate` or `source deactivate`
+
+
+## Setup for Fast.ai
+
+[Video](https://www.youtube.com/watch?v=8rjRfW4JM2I)
+
+Install Anaconda/Miniconda
+
+In Cygwin
+	Make sure that Anaconda/Miniconda is NOT in path
+
+In Cygwin
+	wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg
+	install apt-cyg /bin
+	apt-cyg install python
+	wget https://bootstrap.pypa.io/get-pip.py
+	python get-pip.py
+	pip install awscli
+
+In Cygwin
+	aws configure
+	see LastPass for credentials
+
+Download setup_p2.sh from http://files.fast.ai/files/
