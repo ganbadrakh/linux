@@ -22,7 +22,7 @@ More information: [link](https://www.digitalocean.com/community/tutorials/how-to
 
 Telling cygwin about Anaconda
 1. `echo 'export PATH=/cygdrive/c/Users/<username>/AppData/Local/Continuum/anaconda3:$PATH' >> ~/.bash_profile`
-  * Use single quotes!
+    * Use single quotes!
 2. `source ~/.bash_profile`
 3. `which python`
 
