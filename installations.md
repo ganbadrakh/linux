@@ -41,16 +41,16 @@ Installing Python 2.7 and packages
 2. In Cygwin: Make sure that Anaconda/Miniconda is NOT in path
 3. In Cygwin:
 
-    wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg
-    install apt-cyg /bin
-    apt-cyg install python
-    wget https://bootstrap.pypa.io/get-pip.py
-    python get-pip.py
-    pip install awscli
+    `wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg`
+    `install apt-cyg /bin`
+    `apt-cyg install python`
+    `wget https://bootstrap.pypa.io/get-pip.py`
+    `python get-pip.py`
+    `pip install awscli`
 
 4. In Cygwin
 
-    aws configure
-    see LastPass for credentials
+    `aws configure`
+    `see LastPass for credentials`
 
 5. Download `setup_p2.sh` from `http://files.fast.ai/files/`
