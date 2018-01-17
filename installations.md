@@ -21,12 +21,13 @@ mysql_secure_installation
 More information: [link](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04)
 
 Telling cygwin about Anaconda
-1. `echo "PATH=/cygdrive/c/Users/<username>/AppData/Local/Continuum/anaconda3:$PATH" >> ~/.bash_profile`
+1. `echo 'export PATH=/cygdrive/c/Users/<username>/AppData/Local/Continuum/anaconda3:$PATH' >> ~/.bash_profile`
+  * Use single quotes!
 2. `source ~/.bash_profile`
 3. `which python`
 
 Installing Python 2.7 and packages
 1. `conda create -n py27 python=2.7`
-2. `source activate py27`
+2. `activate py27` or `source activate py27`
 3. `pip install csvsort`
-4. `source deactivate`
+4. `deactivate` or `source deactivate`
