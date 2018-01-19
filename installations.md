@@ -41,5 +41,6 @@ Installing Python 2.7 and packages
 2  `pip install --upgrade pip`
 3. `pip install awscli`  
 4. `aws configure` and enter credentials
-5. `wget http://files.fast.ai/files/setup_p2.sh`
-6. `bash setup_p2.sh`
+5. `git clone https://github.com/fastai/courses`
+6. `cd courses/setup/`
+7. `bash setup_p2.sh`
