@@ -38,8 +38,8 @@ Installing Python 2.7 and packages
 [Video](https://www.youtube.com/watch?v=8rjRfW4JM2I)
 
 1. Get VMVare and Ubuntu 16.04
-2. Install Anaconda/Miniconda
+2  `pip install --upgrade pip`
 3. `pip install awscli`  
-4. `aws configure`  
-   `see LastPass for credentials`  
-5. Download `setup_p2.sh` from `http://files.fast.ai/files/`
+4. `aws configure` and enter credentials
+5. `wget http://files.fast.ai/files/setup_p2.sh`
+6. `bash setup_p2.sh`
