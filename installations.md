@@ -38,7 +38,7 @@ Installing Python 2.7 and packages
 [Video](https://www.youtube.com/watch?v=8rjRfW4JM2I)
 
 1. Get VMVare and Ubuntu 16.04
-2  `pip install --upgrade pip`
+2.  `pip install --upgrade pip`
 3. `pip install awscli`  
 4. `aws configure` and enter credentials
 5. `git clone https://github.com/fastai/courses`
