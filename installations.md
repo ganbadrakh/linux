@@ -4,7 +4,7 @@
 
 ```bash
 sudo apt-get update
-sudo apt install -y gcc htop iotop make pydf unzip zip
+sudo apt install -y curl gcc htop iotop make pydf unzip zip
 ```
 ```bash
 sudo apt install -y mysql-server
