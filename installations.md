@@ -41,7 +41,7 @@ Installing Python 2.7 and packages
 2. On Azure Website: Upgrade to a Pay-as-you-go account.
 3. Launch an NC6 instance on Europe West. Tell it your SSH key.
 4. Go to the instance settings, then `Networking -> Add Inbound -> Add 8888`.
-5. On the created instance: `curl http://files.fast.ai/setup/paperspace | bash`
+5. On the created instance: `curl https://raw.githubusercontent.com/r0f1/linux/master/fastai/azure_setup.sh | bash`
 
 Don't forget to shutdown the instance after you are done.
 
