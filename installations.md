@@ -41,15 +41,7 @@ Installing Python 2.7 and packages
 2. On Azure Website: Upgrade to a Pay-as-you-go account.
 3. Launch an NC6 instance on Europe West. Tell it your SSH key.
 4. Go to the instance settings, then `Networking -> Add Inbound -> Add 8888`.
-5. On the created instance: `wget https://raw.githubusercontent.com/fastai/courses/master/setup/install-gpu-azure.sh`
-6. Run the script until `mkdir downloads` (inclusive)
-7. Download and install Anaconda and create and activate py27 environment (see above).
-8. `conda install jupyter`
-9. Then run the script from `conda install -y bcolz` (inclusive)
-10. `sudo rm -rf /home/flo/.local/share/jupyter/kernels/python2/`
-11. `git clone https://github.com/fastai/courses`
-12. `conda install opencv`
-13. `jupyter notebook`
+5. On the created instance: `curl http://files.fast.ai/setup/paperspace | bash`
 
 Don't forget to shutdown the instance after you are done.
 
