@@ -3,8 +3,9 @@
 ## Installing helpful tools under Ubuntu
 
 ```bash
-sudo apt-get update
-sudo apt install -y curl gcc git htop iotop make pydf python-pip unzip zip
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get -y install build-essential curl gcc git g++ htop iotop make pydf python-pip unzip zip
+sudo pip install --upgrade pip
 ```
 ```bash
 sudo apt install -y mysql-server
@@ -35,12 +36,6 @@ Installing Python 2.7 and packages
 
 ## Setup for Fast.ai
 
-[Video](https://www.youtube.com/watch?v=8rjRfW4JM2I)
-
-1. Get VMVare and Ubuntu 16.04
-2.  `pip install --upgrade pip`
-3. `pip install awscli`  
-4. `aws configure` and enter credentials
-5. `git clone https://github.com/fastai/courses`
-6. `cd courses/setup/`
-7. `bash setup_p2.sh`
+1. Get VMWare and Ubuntu 16.04
+2. On Azure: Upgrade to a Pay-as-you-go account and launch a NC6 instance on Europe West
+3. [Follow this guide](https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b)
