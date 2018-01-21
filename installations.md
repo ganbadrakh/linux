@@ -39,22 +39,17 @@ Installing Python 2.7 and packages
 
 1. Get VMWare and Ubuntu 16.04.
 2. On Azure Website: Upgrade to a Pay-as-you-go account.
-3. On Azure Website: Launch an NC6 instance on Europe West.
-4. On the created instance: `wget https://raw.githubusercontent.com/fastai/courses/master/setup/install-gpu-azure.sh`
-5. `bash install-gpu-azure.sh`
-6.
-```Bash
-source .bashrc
-jupyter notebook --generate-config
-jupass=`python -c "from notebook.auth import passwd; print(passwd())"`
-echo "c.NotebookApp.password = u'"$jupass"'" >> .jupyter/jupyter_notebook_config.py
-echo "c.NotebookApp.ip = '*' c.NotebookApp.open_browser = False" >> .jupyter/jupyter_notebook_config.py
-```
-7. `git clone https://github.com/fastai/courses`
-8. `conda install opencv`
-9. `cd ~/courses/deeplearning1/nbs`
-10. On Azure Website: Go to the instance settings, then `Networking -> Add Inbound -> Add 8888`.
-11. On the created instance: `jupyter notebook`
+3. Launch an NC6 instance on Europe West. Tell it your SSH key.
+4. Go to the instance settings, then `Networking -> Add Inbound -> Add 8888`.
+5. On the created instance: `wget https://raw.githubusercontent.com/fastai/courses/master/setup/install-gpu-azure.sh`
+6. Run the script until `mkdir downloads` (inclusive)
+7. Download and install Anaconda and create and activate py27 environment (see above).
+8. `conda install jupyter`
+9. Then run the script from `conda install -y bcolz` (inclusive)
+10. `bash install-gpu-azure.sh`
+11. `git clone https://github.com/fastai/courses`
+12. `conda install opencv`
+13. `jupyter notebook`
 
 Don't forget to shutdown the instance after you are done.
 
