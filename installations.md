@@ -38,8 +38,8 @@ Installing Python 2.7 and packages
 [Old guide](https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b) 
 
 1. Get VMWare and Ubuntu 16.04.
-2. On Azure: Upgrade to a Pay-as-you-go account.
-3. On Azure: Launch an NC6 instance on Europe West.
+2. On Azure Website: Upgrade to a Pay-as-you-go account.
+3. On Azure Website: Launch an NC6 instance on Europe West.
 4. On the created instance: `wget https://raw.githubusercontent.com/fastai/courses/master/setup/install-gpu-azure.sh`
 5. `bash install-gpu-azure.sh`
 6.
@@ -50,10 +50,11 @@ jupass=`python -c "from notebook.auth import passwd; print(passwd())"`
 echo "c.NotebookApp.password = u'"$jupass"'" >> .jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.ip = '*' c.NotebookApp.open_browser = False" >> .jupyter/jupyter_notebook_config.py
 ```
-7. On the local VM: `ssh -L 8000:localhost:8888 <username>@<ip address of azure instance>`
-8. On the created instance: `git clone https://github.com/fastai/courses`
-9. `conda install opencv`
-10. `cd ~/courses/deeplearning1/nbs`
-11. `jupyter notebook`
+7. `git clone https://github.com/fastai/courses`
+8. `conda install opencv`
+9. `cd ~/courses/deeplearning1/nbs`
+10. On Azure Website: Go to the instance settings, then `Networking -> Add Inbound -> Add 8888`.
+11. On the created instance: `jupyter notebook`
 
+Don't forget to shutdown the instance after you are done.
 
