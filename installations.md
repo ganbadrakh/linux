@@ -46,7 +46,7 @@ Installing Python 2.7 and packages
 7. Download and install Anaconda and create and activate py27 environment (see above).
 8. `conda install jupyter`
 9. Then run the script from `conda install -y bcolz` (inclusive)
-10. `bash install-gpu-azure.sh`
+10. `sudo rm -rf /home/flo/.local/share/jupyter/kernels/python2/`
 11. `git clone https://github.com/fastai/courses`
 12. `conda install opencv`
 13. `jupyter notebook`
