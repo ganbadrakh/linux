@@ -11,6 +11,9 @@ sudo pip install --upgrade pip
 sudo apt install -y mysql-server
 mysql_secure_installation
 ```
+```bash
+conda install -c conda-forge jupyter_contrib_nbextensions
+```
 
 ## Installing Python Anaconda
 
