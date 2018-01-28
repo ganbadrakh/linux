@@ -8,11 +8,10 @@ sudo apt-get -y install build-essential curl gcc git g++ htop iotop make pydf py
 sudo pip install --upgrade pip
 ```
 ```bash
-sudo apt install -y mysql-server
-mysql_secure_installation
-```
-```bash
 conda install -c conda-forge jupyter_contrib_nbextensions
+pip install --upgrade notebook
+pip install jupyterthemes
+jt -t grade3 -T
 ```
 
 ## Installing Python Anaconda
